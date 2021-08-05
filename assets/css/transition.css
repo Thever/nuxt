@@ -1,0 +1,21 @@
+/* 定义所有的路由的统一的动画效果 */
+/* 约定所有页面的动画效果 */
+/* 页面进入，页面离开动效 */
+.page-enter-active, .page-leave-active{
+  transition:opacity 0.5s;
+}
+/* 页面入场，页面退场动效 */
+.page-enter, .page-leave-active{
+  opacity:0;
+}
+
+/* 约定单独页面的动画效果，注意要以类名为开头 */
+/* 单路由动画 -> 组件内部 transition:'类名'  */
+/* 页面进入，页面离开动效 */
+.test-enter-active, .test-leave-active{
+  transition:0.5s ease all;
+}
+/* 页面入场，页面退场动效 */
+.test-enter, .test-leave-active{
+  margin-left: -1000px;
+}
